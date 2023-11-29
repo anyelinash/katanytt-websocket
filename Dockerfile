@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expone el puerto 8080 (o el puerto que estés utilizando para tu aplicación)
-EXPOSE 8888
+EXPOSE 5555
 
 # Comando para ejecutar la aplicación cuando el contenedor se inicie
 CMD ["python", "main.py"]

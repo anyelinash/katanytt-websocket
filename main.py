@@ -14,7 +14,7 @@ async def notificaciones(websocket, path):
         await asyncio.sleep(5)  # Simula un intervalo de notificación
 
 
-start_server = websockets.serve(notificaciones, "localhost", 8888)
+start_server = websockets.serve(notificaciones, "localhost", 5555)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
